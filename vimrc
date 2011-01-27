@@ -1,3 +1,10 @@
+"Personal preferences and workarounds
+
+colorscheme vibrantink
+
+let g:SuperTabCrMapping = 0 "Terrible fix for Supertab
+
+
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -11,10 +18,12 @@ set history=1000
 set showcmd     "show incomplete cmds down the bottom
 set showmode    "show current mode down the bottom
 
+set showmatch
+
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
-set nowrap      "dont wrap lines
+set wrap        "wrap lines
 set linebreak   "wrap lines at convenient points
 
 "statusline setup
@@ -195,7 +204,8 @@ endif
 
 "indent settings
 set shiftwidth=4
-set softtabstop=4
+"set softtabstop=4
+set ts=4
 set expandtab
 set autoindent
 
@@ -225,6 +235,9 @@ filetype indent on
 
 "turn on syntax highlighting
 syntax on
+
+"Set text width to default PEP-8
+set textwidth=79
 
 "some stuff to get the mouse going in term
 set mouse=a
@@ -310,3 +323,11 @@ function! s:HighlightLongLines(width)
         echomsg "Usage: HighlightLongLines [natural number]"
     endif
 endfunction
+
+"
+"
+" These are the little modifications used in our python setup
+"
+"
+"
+
