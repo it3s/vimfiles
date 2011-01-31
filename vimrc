@@ -4,6 +4,7 @@ colorscheme vibrantink
 
 let g:SuperTabCrMapping = 0 "Terrible fix for Supertab
 
+autocmd FileType python compiler pylint "This way, every time a python file is saved, pylint is called
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
