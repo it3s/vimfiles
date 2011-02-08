@@ -329,6 +329,6 @@ endfunction
 "
 " These are the little modifications used in our python setup
 "
-"
+au BufNewFile,BufRead *.genshi set syntax=xml
 "
 
