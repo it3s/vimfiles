@@ -329,4 +329,5 @@ endfunction
 "
 au BufNewFile,BufRead *.genshi set syntax=xml
 "
-
+" This makes VIM check automatically if the buffer has been updated
+au CursorHold * checktime
