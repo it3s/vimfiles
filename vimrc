@@ -236,7 +236,7 @@ filetype indent on
 syntax on
 
 "Set text width to default PEP-8
-set textwidth=79
+"set textwidth=79
 
 "some stuff to get the mouse going in term
 set mouse=a
