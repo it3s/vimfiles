@@ -198,7 +198,7 @@ if v:version >= 703
     set undodir=~/.vim/undofiles
     set undofile
 
-    set colorcolumn=+1
+    set colorcolumn=80
 endif
 
 "indent settings
